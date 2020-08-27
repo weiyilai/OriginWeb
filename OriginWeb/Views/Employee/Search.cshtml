@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "員工列表";
+    var time = DateTime.Now.ToString("yyyyMMddHHmmssfff");
+}
+
+@section scripts {
+    <script src="~/Scripts/Employee/search.js?@time"></script>
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div class="jumbotron">
+    <button id="btnSearch" onclick="GetEmployeeList()">Search</button>
+</div>
+
+<div id="divResult"></div>

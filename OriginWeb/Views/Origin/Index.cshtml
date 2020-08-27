@@ -1,0 +1,25 @@
+﻿
+@{
+    
+}
+
+@section scripts {
+    <script type="text/javascript">
+        $('#btnOrigin').click(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'https://localhost:5001/api/values',
+                success: function (result, textStatus, jqXHR) {
+                    console.log(result);
+                    $('#divOrigin').html(result.join());
+                },
+                error: function (request, status, error) {
+                }
+            });
+        });
+    </script>
+}
+
+<br />
+<button id="btnOrigin">Origin Click</button>
+<div id="divOrigin"></div>

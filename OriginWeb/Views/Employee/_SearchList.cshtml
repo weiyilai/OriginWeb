@@ -1,0 +1,17 @@
+﻿@model List<OriginWeb.VM.Employee.EmployeesVM>
+
+<table class="table table-dark">
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.EmployeeID</td>
+            <td>@item.LastName</td>
+            <td>@item.FirstName</td>
+            <td>@item.Title</td>
+            <td>@item.TitleOfCourtesy</td>
+        </tr>
+        }
+    </tbody>
+</table>
+
