@@ -169,6 +169,7 @@
     <Content Include="Views\Origin\Index.cshtml" />
     <Content Include="Views\Employee\Search.cshtml" />
     <Content Include="Views\Employee\_SearchList.cshtml" />
+    <Content Include="Views\Employee\_PopupModal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -20,5 +20,28 @@ namespace OriginWeb.Controllers
         {
             return PartialView("_SearchList", employees);
         }
+
+        /// <summary>
+        /// 新增畫面
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
+        public ActionResult AddResult()
+        {
+            return PartialView("_PopupModal", new EmployeesVM());
+        }
+
+        /// <summary>
+        /// 編輯畫面
+        /// </summary>
+        /// <param name="employee"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public ActionResult EditResult(EmployeesVM employee)
+        {
+            return PartialView("_PopupModal", employee);
+        }
+
+        
     }
 }
