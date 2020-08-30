@@ -5,14 +5,24 @@
 }
 
 @section scripts {
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/Scripts/Employee/search.js?@time"></script>
+}
+
+@section styles {
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
 }
 
 <h2>@ViewBag.Title</h2>
 
 <div class="jumbotron">
-    <button id="btnSearch" onclick="GetEmployeeList()">Search</button>
-    <button data-toggle="modal" data-target="#divPopup" onclick="ShowAdd()">Add</button>
+    <button id="btnSearch" class="btn btn-primary" onclick="GetEmployeeList()">Search</button>
+    <button class="btn btn-dark" data-toggle="modal" data-target="#divPopup" onclick="ShowAdd()">Add</button>
 </div>
 
 <div id="divResult"></div>

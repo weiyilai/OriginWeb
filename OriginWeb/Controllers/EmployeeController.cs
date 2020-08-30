@@ -41,7 +41,5 @@ namespace OriginWeb.Controllers
         {
             return PartialView("_PopupModal", employee);
         }
-
-        
     }
 }
